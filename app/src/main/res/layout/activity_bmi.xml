@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".get_started">
 
     <TextView
         android:id="@+id/bmi"
@@ -122,7 +122,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="184dp"
         android:backgroundTint="@color/material_dynamic_neutral50"
-        android:text="calculate"
+        android:text="Calculate"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:cornerRadius="35dp"
