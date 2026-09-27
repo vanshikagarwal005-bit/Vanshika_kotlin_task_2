@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Task2">
         <activity
-            android:name=".MainActivity"
+            android:name=".get_started"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -26,13 +26,10 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".GetStarted"
+            android:name=".MainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".get_started"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".choice"
             android:exported="false"

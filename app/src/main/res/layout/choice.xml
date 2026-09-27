@@ -14,8 +14,11 @@
         android:text="Select your\n    choice"
         android:textSize="48sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="76dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
 
     <Button
         android:id="@+id/button3"
@@ -26,18 +29,22 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="318dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.256"
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
         android:backgroundTint="@color/material_dynamic_neutral50"
         android:text="BMI CALCULATOR"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="466dp" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.258"
+        tools:layout_editor_absoluteX="84dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
