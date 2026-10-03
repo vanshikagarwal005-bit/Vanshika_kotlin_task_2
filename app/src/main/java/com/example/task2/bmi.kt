@@ -38,6 +38,11 @@ class bmi : AppCompatActivity() {
         val unitWeight = arrayOf("kg", "g")
         val unitHeight = arrayOf("m", "cm")
 
+        val result=findViewById<TextView>(R.id.textView9)
+        val description=findViewById<TextView>(R.id.bmiDescription)
+        val categoryText=findViewById<TextView>(R.id.bmiCategory)
+
+
         spinner3.adapter = ArrayAdapter(
             this, android.R.layout.simple_spinner_dropdown_item, unitWeight
         )
@@ -64,13 +69,33 @@ class bmi : AppCompatActivity() {
             val weightUnit = spinner3.selectedItem.toString()
             val heightUnit = spinner4.selectedItem.toString()
 
-            val weightKg = if (weightUnit == "g") weight / 1000 else weight
-            val heightM = if (heightUnit == "cm") height / 100 else height
+            var weightKg=weight
+            if(weightUnit=="g"){
+                weightKg=weight/1000
+            }
+            else{
+                weightKg=weight
+            }
+
+            var heightM=height
+            if(heightUnit=="cm"){
+                heightM=height/100
+            }
+            else{
+                heightM=height
+            }
 
             val bmiValue = weightKg / (heightM * heightM)
             val bmiText = String.format("%.1f", bmiValue)
 
             val (category, message) = getCategory(bmiValue)
+
+            result.text=bmiText
+            description.text=message
+            categoryText.text=category
+
+
+
 
 
             AlertDialog.Builder(this)

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:background="#EAF3FF">
+
+    <TextView
+        android:id="@+id/historyBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI: 22.9"
+        android:textColor="#24449C"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/historyCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal weight"
+        android:textColor="#21734E"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/historyDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Healthy"
+        android:textColor="#657080"
+        android:textSize="12sp"/>
+
+</LinearLayout>
